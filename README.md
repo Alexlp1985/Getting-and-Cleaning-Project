@@ -5,3 +5,5 @@ b) R Markdown Codebook "Getting and cleaning.Rmd"
 c) run_analysis.R
 d) df1.csv
 e) df2.csv
+f) df1.txt
+g) df2.txt
