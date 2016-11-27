@@ -79,3 +79,10 @@ df2<-df1 %>%
   gather(name,value,-activity,-sample,-subject,-label) %>%
   group_by(activity,subject) %>%
   summarise(average=mean(value))
+
+
+write.csv(x=df1,file = "df1.csv")
+write.csv(x=df2,file = "df2.csv")
+
+write.table(x=df1,file = "df1.txt",row.name = FALSE)
+write.table(x=df2,file = "df2.txt",row.name = FALSE)
