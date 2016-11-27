@@ -6,7 +6,7 @@ temp1<-tempdir()
 unzip(zipfile = temp,exdir = temp1)
 list.files(temp1)
 list.dirs(temp1)
-setwd(temp1)
+
 
 ##install.packages("dplyr")
 ##install.packages("tidyr")
@@ -80,6 +80,8 @@ df2<-df1 %>%
   group_by(activity,subject) %>%
   summarise(average=mean(value))
 
+
+## setwd(temp1)
 
 write.csv(x=df1,file = "df1.csv")
 write.csv(x=df2,file = "df2.csv")
